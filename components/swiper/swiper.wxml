@@ -1,0 +1,29 @@
+<view class="swiper">
+  <!-- 小程序自带的轮播图 -->
+  <swiper 
+    class="myswiper" 
+    indicator-dots="{{ indicatorDots }}" 
+    autoplay="{{ autoplay }}"
+    interval="{{ interval }}"
+    duration="{{ duration }}"
+    indicator-active-color="#fff"
+    indicator-color="#fa2c19"
+  >
+    <swiper-item>
+      <image src="http://iwenwiki.com:3001/images/banner/1.jpg" mode="widthFix"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="http://iwenwiki.com:3001/images/banner/2.png" mode="widthFix"/>
+    </swiper-item>    <swiper-item>
+      <image src="http://iwenwiki.com:3001/images/banner/3.jpg" mode="widthFix"/>
+    </swiper-item>    <swiper-item>
+      <image src="http://iwenwiki.com:3001/images/banner/4.jpg" mode="widthFix"/>
+    </swiper-item>
+  <!-- <view wx:for="{{ swiperData }}" wx:key="index">
+    <swiper-item>
+      <image src="{{ item.url }}" mode="widthFix"/>
+    </swiper-item>
+  </view> -->
+  
+  </swiper>
+</view>

@@ -1,0 +1,15 @@
+<view class="index-container">
+  <view class="header">
+    <van-search value="{{ value }}" shape="round" background="#fa2c19" placeholder="请输入搜索关键词" />
+    <swiper 
+      indicatorDots="{{ swiperOptions.indicatorDots }}" 
+      autoplay="{{ swiperOptions.autoplay }}" 
+      interval="{{ swiperOptions.interval }}" 
+      duration="{{ swiperOptions.duration }}"
+      swiperData="{{ swiperData }}"
+    >
+
+    </swiper>
+  </view>
+
+</view>
