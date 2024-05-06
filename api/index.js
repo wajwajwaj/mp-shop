@@ -1,6 +1,6 @@
 // 网络请求方法
 const { request } = require("../utils/request.js")
-const { baseUrl, banner, goods, hostSearch, search } = require("./base")
+const { baseUrl, banner, goods, hostSearch, search, details } = require("./base")
 function getBanner(data){
   return request(baseUrl + banner, 'GET', data)
 }
@@ -13,9 +13,14 @@ function getHostSearch(data){
 function getSearch(data){
   return request(baseUrl + search, 'GET', data)
 }
+function getDetails(data){
+  return request(baseUrl + details, 'GET', data)
+}
+
 module.exports ={ 
   getBanner,
   getGoods,
   getHostSearch,
   getSearch,
+  getDetails,
 }

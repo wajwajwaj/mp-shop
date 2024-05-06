@@ -1,0 +1,31 @@
+.details{
+  width: 100%;
+}
+
+.details image{
+  width: 100%;
+}
+
+.details .content {
+  margin: 10px;
+}
+
+.details .content .price {
+  color: red;
+}
+
+.details .content .price text {
+  color: red;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.details .content .title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.details .introduce image {
+  width: 100%;
+}

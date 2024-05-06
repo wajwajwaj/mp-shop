@@ -6,4 +6,5 @@ module.exports = {
   goods: '/api/goods', // 列表
   hostSearch: '/api/keywords', // 热门搜索
   search: '/api/goods/search', //搜索
+  details: '/api/goods/details', //详情
 }
