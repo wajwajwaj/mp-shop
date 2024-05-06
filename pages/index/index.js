@@ -97,6 +97,7 @@ Page({
     })
     this.https(this.data.page)
   },
+  // 点击搜索框获取焦点
   onSearch(){
     // 路由跳转
     wx.navigateTo({

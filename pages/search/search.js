@@ -1,30 +1,39 @@
 // pages/search/search.js
+const { getHostSearch } = require('../../api/index')
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    value: ''
+    value: '',
+    hostData: []
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad(options) {
-
+    getHostSearch().then(res => {
+      this.setData({
+        hostData: res.data.data.result || []
+      })
+    })
   },
   onChange(e) {
-    console.log(e);
-
     this.setData({
       value: e.detail,
     });
   },
   onSearch() {
-    console.log('搜索');
+    wx.navigateTo({
+      url: '/pages/goods/goods?search=' + this.data.value,
+    })
   },
   onClick() {
-    console.log('搜索qq')
+    wx.navigateTo({
+      url: '/pages/goods/goods?search=' + this.data.value,
+    })
   },
+  onClickHostkey(e){
+    this.setData({
+      value: e.currentTarget.dataset.hostkeyvalue
+    })
+    wx.navigateTo({
+      url: '/pages/goods/goods?search=' + e.currentTarget.dataset.hostkeyvalue,
+    })
+  }
 })

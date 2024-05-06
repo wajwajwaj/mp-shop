@@ -1,3 +1,17 @@
 .search-button{
   margin: 0 10px;
 }
+.keywords{
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+
+}
+.keywords .item {
+  display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #f1f1f1;
+    color: #666;
+    font-size: 12px;
+}

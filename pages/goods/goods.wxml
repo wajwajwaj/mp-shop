@@ -1,0 +1,3 @@
+<view>
+  <goods-list goodsData="{{dataSource}}"></goods-list>
+</view>

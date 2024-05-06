@@ -1,9 +1,9 @@
-<van-search
-  value="{{ value }}"
-  placeholder="请输入搜索关键词"
-  use-action-slot
-  bind:change="onChange"
-  bind:search="onSearch"
->
-  <van-button class="search-button" type="primary" size="small" slot="action" bind:tap="onClick">搜索</van-button>
-</van-search>
+<view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:change="onChange" bind:search="onSearch">
+    <van-button class="search-button" type="primary" size="small" slot="action" bind:tap="onClick">搜索</van-button>
+  </van-search>
+  <view class="keywords">
+  <!-- data-为自定义属性，可以向组件的currentTarget.dataset中存储数据 -->
+    <text data-hostKeyValue="{{ item.content }}" bind:tap="onClickHostkey" class="item" wx:for="{{ hostData }}" wx:key="index">{{item.content}}</text>
+  </view>
+</view>
